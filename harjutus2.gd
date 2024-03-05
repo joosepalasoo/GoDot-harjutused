@@ -8,7 +8,7 @@ func _ready():
 	var tootesumma=randi()%200
 	if rahakogus >= tootesumma:
 		print("saad toodet osta juhuuu!")
-	elif tootesumma >= rahakogus:
+	else:
 		var jaak=tootesumma-rahakogus
 		print("ei saa toodet osta puudujääev raha:",jaak)
 	print(rahakogus)
