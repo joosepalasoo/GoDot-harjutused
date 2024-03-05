@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://cv3pl4hheb0kk"]
+[gd_scene load_steps=3 format=3 uid="uid://cv3pl4hheb0kk"]
 
-[ext_resource type="Script" path="res://skriptid.gd" id="1_2bkb2"]
+[ext_resource type="Script" path="res://harjutus1.gd" id="1_2bkb2"]
+[ext_resource type="Script" path="res://harjutus2.gd" id="2_t2w6w"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_2bkb2")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("2_t2w6w")
