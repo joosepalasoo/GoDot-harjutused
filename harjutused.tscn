@@ -1,8 +1,62 @@
-[gd_scene load_steps=2 format=3 uid="uid://cv3pl4hheb0kk"]
+[gd_scene load_steps=4 format=3 uid="uid://cv3pl4hheb0kk"]
 
-[ext_resource type="Script" path="res://harjutus4.1.gd" id="1_nr1k5"]
+[ext_resource type="Script" path="res://harjutus7.gd" id="1_qkko8"]
+[ext_resource type="Texture2D" uid="uid://baake7u5hr1dc" path="res://graafika/taustapilt.jpg" id="2_yo245"]
+[ext_resource type="FontFile" uid="uid://c5gbrtvmrvcfs" path="res://graafika/VT323-Regular.ttf" id="3_mmbq7"]
 
 [node name="Node" type="Node"]
 
 [node name="Node" type="Node" parent="."]
-script = ExtResource("1_nr1k5")
+script = ExtResource("1_qkko8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node"]
+position = Vector2(576.25, 324)
+scale = Vector2(0.256117, 0.216)
+texture = ExtResource("2_yo245")
+metadata/_edit_lock_ = true
+
+[node name="tegevus" type="RichTextLabel" parent="Node/Sprite2D"]
+offset_left = -2250.0
+offset_top = -1500.0
+offset_right = -782.0
+offset_bottom = -1134.0
+theme_override_fonts/normal_font = ExtResource("3_mmbq7")
+theme_override_font_sizes/normal_font_size = 300
+text = "tegevus"
+
+[node name="elud" type="RichTextLabel" parent="Node/Sprite2D"]
+offset_left = 370.0
+offset_top = 1134.0
+offset_right = 2248.0
+offset_bottom = 1500.0
+theme_override_fonts/normal_font = ExtResource("3_mmbq7")
+theme_override_font_sizes/normal_font_size = 300
+text = "elud:"
+
+[node name="padrunid" type="RichTextLabel" parent="Node/Sprite2D"]
+offset_left = -2250.0
+offset_top = 1134.0
+offset_right = -454.0
+offset_bottom = 1500.0
+theme_override_fonts/normal_font = ExtResource("3_mmbq7")
+theme_override_font_sizes/normal_font_size = 300
+text = "padrunid:"
+
+[node name="skoor" type="RichTextLabel" parent="Node/Sprite2D"]
+offset_left = 635.0
+offset_top = -1500.0
+offset_right = 2244.0
+offset_bottom = -1134.0
+theme_override_fonts/normal_font = ExtResource("3_mmbq7")
+theme_override_font_sizes/normal_font_size = 300
+text = "skoor:"
+
+[node name="gameover" type="RichTextLabel" parent="Node/Sprite2D"]
+visible = false
+offset_left = -1062.99
+offset_top = -185.185
+offset_right = 791.007
+offset_bottom = 351.815
+theme_override_fonts/normal_font = ExtResource("3_mmbq7")
+theme_override_font_sizes/normal_font_size = 500
+text = "GAME OVER"

@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://b84xydddufk3v"]
+
+[ext_resource type="Script" path="res://harjutus8.gd" id="1_yoyxs"]
+[ext_resource type="Texture2D" uid="uid://boneg10eafq41" path="res://graafika/vstaustapilt.jpg" id="2_s3dip"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_yoyxs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.587755, 0.661224)
+texture = ExtResource("2_s3dip")
+metadata/_edit_lock_ = true
+
+[node name="punktid" type="RichTextLabel" parent="Sprite2D"]
+offset_left = -912.0
+offset_top = -440.0
+offset_right = -514.0
+offset_bottom = -369.0
+
+[node name="punktid2" type="RichTextLabel" parent="Sprite2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="tulemus" type="RichTextLabel" parent="Sprite2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="valik" type="RichTextLabel" parent="Sprite2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="valik2" type="RichTextLabel" parent="Sprite2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="KPK" type="RichTextLabel" parent="Sprite2D"]
+offset_left = -299.444
+offset_top = 146.698
+offset_right = -259.444
+offset_bottom = 186.698
