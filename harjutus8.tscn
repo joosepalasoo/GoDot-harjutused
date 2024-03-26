@@ -17,25 +17,82 @@ offset_left = -912.0
 offset_top = -440.0
 offset_right = -514.0
 offset_bottom = -369.0
+theme_override_font_sizes/normal_font_size = 50
+text = "punktid:"
 
-[node name="punktid2" type="RichTextLabel" parent="Sprite2D"]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="vaenlasepunktid" type="RichTextLabel" parent="Sprite2D"]
+offset_left = 434.0
+offset_top = -433.0
+offset_right = 889.0
+offset_bottom = -366.0
+theme_override_font_sizes/normal_font_size = 50
+text = "punktid:"
 
 [node name="tulemus" type="RichTextLabel" parent="Sprite2D"]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -170.139
+offset_top = -235.926
+offset_right = 152.861
+offset_bottom = -155.926
+theme_override_font_sizes/normal_font_size = 50
+text = "tulemus"
 
 [node name="valik" type="RichTextLabel" parent="Sprite2D"]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -796.25
+offset_top = -77.1297
+offset_right = -233.25
+offset_bottom = 99.8703
+theme_override_font_sizes/normal_font_size = 100
+text = "valik"
 
-[node name="valik2" type="RichTextLabel" parent="Sprite2D"]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="arvutivalik" type="RichTextLabel" parent="Sprite2D"]
+offset_left = 459.375
+offset_top = -71.0803
+offset_right = 915.375
+offset_bottom = 81.9197
+theme_override_font_sizes/normal_font_size = 100
+text = "valik"
 
 [node name="KPK" type="RichTextLabel" parent="Sprite2D"]
-offset_left = -299.444
-offset_top = 146.698
-offset_right = -259.444
-offset_bottom = 186.698
+offset_left = -258.611
+offset_top = -438.581
+offset_right = 171.389
+offset_bottom = -338.581
+theme_override_font_sizes/normal_font_size = 50
+text = "kivi-paber-käärid"
+
+[node name="kivi" type="Button" parent="Sprite2D"]
+offset_left = -857.5
+offset_top = 285.834
+offset_right = -667.5
+offset_bottom = 362.834
+theme_override_font_sizes/font_size = 50
+text = "kivi"
+
+[node name="paber" type="Button" parent="Sprite2D"]
+offset_left = -640.0
+offset_top = 286.0
+offset_right = -432.0
+offset_bottom = 363.0
+theme_override_font_sizes/font_size = 50
+text = "paber"
+
+[node name="kaarid" type="Button" parent="Sprite2D"]
+offset_left = -403.229
+offset_top = 285.834
+offset_right = -213.229
+offset_bottom = 362.834
+theme_override_font_sizes/font_size = 50
+text = "käärid"
+
+[node name="uusmang" type="Button" parent="Sprite2D"]
+offset_left = -182.049
+offset_top = -338.766
+offset_right = 63.9514
+offset_bottom = -261.766
+theme_override_font_sizes/font_size = 50
+text = "uus mäng"
+
+[connection signal="pressed" from="Sprite2D/kivi" to="." method="_on_kivi_pressed"]
+[connection signal="pressed" from="Sprite2D/paber" to="." method="_on_paber_pressed"]
+[connection signal="pressed" from="Sprite2D/kaarid" to="." method="_on_kaarid_pressed"]
+[connection signal="pressed" from="Sprite2D/uusmang" to="." method="_on_uusmang_pressed"]
